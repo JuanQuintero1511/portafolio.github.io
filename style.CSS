@@ -1,0 +1,362 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+body {
+    background-color: #000000;
+}
+
+header {
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(Img/hero.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.menu {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.menu .logo {
+    font-weight: bolder;
+    font-size: 25px;
+    color: #f61706;
+}
+
+.menu .navbar ul {
+    list-style: none;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #ffffff;
+    display: block;
+}
+
+.menu .navbar ul li a:hover {
+    color: #f61706;
+}
+
+#menu {
+    display: none;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.header-text {
+    text-align: center;
+    width: 700px;
+}
+
+.header-text h1 {
+    color: #ffffff;
+    font-size: 55px;   
+}
+
+.header-text p{
+    margin-top: 35px;
+    color: #ffffff;
+}
+
+.btn-1 {
+    display: inline-block;
+    background-color: #f61706;
+    margin-top: 35px;
+    padding: 15px 25px;
+    border-radius: 25px;
+    color: #ffffff;
+}
+
+.btn-1:hover {
+    background-color: #cd1103;
+}
+
+.Services  {
+    padding: 50px 0px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.Services h2{
+    font-size: 55px;
+    margin-bottom: 25px;
+}
+
+.txt-1 {
+    font-size: 18px;
+    padding: 0px 200px;
+}
+
+.group-services {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Services {
+    padding: 35px 25px;
+}
+
+.Services img {
+    width: 50px;
+    margin-bottom: 25px;
+}
+
+.Services p {
+    font-size: 18px;
+}
+
+.Services h3{
+    font-size: 22px;
+    margin-bottom: 18px;
+}
+
+.portafolio {
+    text-align: center;
+    padding: 50px 0px;
+    color: #ffffff;
+}
+
+.portafolio-txt {
+    margin-bottom: 50px;
+}
+
+.portafolio-txt h2 {
+    font-size: 55px;
+    margin-bottom: 35px;
+}
+
+.portafolio-txt p{
+    font-size: 18px;
+}
+
+.imgs {
+    display: flex;
+    justify-content: center;
+}
+
+.imgs img{
+    width: 250px;
+    margin: 0px 10px;
+}
+
+.bg-sec {
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(Img/bg-sec.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 35px 0px;
+}
+
+.bg-txt {
+    padding: 100px 0px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.bg-txt h2 {
+    font-size: 55px;
+    margin-bottom: 35px;
+}
+
+.bg-txt p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.prices {
+    padding: 50px 0px;
+    display: flex;
+    justify-content: space-between;
+    color: #ffffff;
+}
+
+.price {
+    text-align: center;
+}
+
+.price h3 {
+    font-size: 50px;
+    margin-bottom: 25px; 
+}
+
+.price ul li {
+    font-size: 18px;
+}
+
+footer {
+    padding: 150px 0px;
+}
+
+.ft {
+    display: flex;
+    justify-content: space-between;
+}
+
+.enlace h3 {
+    color: #ffffff;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.enlace li {
+    list-style: none;
+}
+
+.enlace a {
+    color: #ffffff;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.enlace form {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-2 {
+    padding: 10px 25px;
+    border: 0px;
+}
+
+.btn-3 {
+    background-color: #f61706;
+    padding: 10px 25px;
+    border: 0px;
+    color: #ffffff;
+    margin-top: 15px;
+}
+
+@media(max-width:991px ) {
+    .menu {
+        padding: 20px;
+    }
+    .menu label {
+        display: initial;
+    }
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #f61706;
+        display: none;
+    }
+    .menu .navbar ul li {
+        width: 100%;
+    }
+    .menu .navbar ul li a:hover {
+        color: #bebebe;
+    }
+
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+
+    .menu-icono {
+        width: 25px;
+    }
+
+    header{
+        height: 50vh;
+    }
+
+    .header-text{
+        margin-top: 50px;
+        padding: 0px 25px;
+    }
+
+    .Servicios{
+        padding: 30px;
+    }
+
+    .txt-1 {
+        padding: 30px;
+        margin-bottom: 35px;
+    }
+
+    .group-services {
+        flex-direction: column;
+    }
+
+    .Servicios {
+        margin-bottom: 20px;
+    }
+
+    .portafolio {
+        padding: 0px 30px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .portafolio-txt p{
+        margin: 0;
+    }
+
+    .imgs{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imgs img {
+        margin: 15px 0px 0px 0px;
+    }
+    
+    .bg-txt {
+        padding: 30px;
+    }
+
+    .price {
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+    }
+
+    .price {
+        margin-bottom: 15px;
+    }
+
+    footer {
+        padding: 30px;
+    }
+
+    .ft {
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .enlace form {
+        align-items: center;
+    }
+}
